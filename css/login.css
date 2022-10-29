@@ -1,0 +1,55 @@
+@import 'login.css';
+
+* {
+    padding: 100px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', Sans-serif;
+}
+
+.login {
+    width: 200px
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c6cee0;
+    animation: ease-in;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    font-weight: bold;
+    bottom: 3px;
+}
+
+#botaoadd {
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 90px;
+    background-image: url("icon/add (1).png") no-repeat;
+    position: relative;
+    right: -60px;
+    top: -5px;
+    background-size: cover;
+    object-fit: contain;
+}
+
+#botaolog {
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 90px;
+    background-image: url("/Todo/icon/login (1).png");
+    position: relative;
+    right: -60px;
+    top: -5px;
+    background-size: cover; 
+    object-fit: contain;
+}

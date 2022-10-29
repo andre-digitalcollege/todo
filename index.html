@@ -12,36 +12,38 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="icon/table.png">
+   
   </head>
   <body style="background-color: #dedede">
-    <section class="row mt-5">
-      <div class="col-md-4 offset-md-4">
+    <section class="row mt-4">
+      <div class="col-md-18 offset-md-4">
         <div class="card card-body">
-          <h2>Lista telefonica (<span id="numeros">0</span>)</h2>
+          <h2 class="list">Lista (<span id="numeros">0</span>)</h2>
           <hr />
-
           <div class="col-9">
             <input
               id="input_nova_tarefa"
-              placeholder="Nova Contato"
+              placeholder="Novo Contato"
               type="text"
               class="form-control"
             />
+            <hr />
           </div>
-
           <div class="col-3 d-grid">
-            <button class="btn btn-outline-primary" onclick="addContato()">
-              Pronto!
-            </button>
+            <button id="botaoadic" class="btn btn-outline-primary" onclick="addContato()">
+    
+            </button><br>
+            <button id="botaodeslo" class="btn btn btn-warning" onclick="deslogar()"></button>
           </div>
-
           <hr />
-
           <div id="tarefas">
             <ul>
                 <li>nome - idade 
                   <button onclick="deletar('identificador')">Deletar</button>
                   <button onclick="atualizar('identificador')">Atualizar</button>
+                  <button onclick="favoritar('identificador')">favoritar</button>
                 </li>
             </ul>
           </div>
@@ -49,6 +51,7 @@
       </div>
     </section>
 
-    <script src="eventos.js"></script>
+    <script src="js/eventos.js"></script>
+    <script>atualiza()</script>
   </body>
 </html>

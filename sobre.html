@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="icon/about.png">
+</head>
+<body>
+    <main>
+        <button>Random</button>
+        <div class="image"></div>
+    </main>
+    <ul>
+        <li>pagina login</li>
+        <li>icones</li>
+        <li>add bootstrap</li>
+        <li>add cor botao via js</li>
+        <li>add linha comando pra usar enter fisico</li>
+        <li>add efeito no nome lista</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+        <footer>
+            <p>Andre Sabado a Tarde FS08</p>
+        </footer>
+</body>
+</html>
+<script>
+    async function getExternalImage() {
+       const response = await fetch('http://source.unsplash.com/random')
+       document.querySelector('.image').innerHTML = `<img src="${response.url}">`
+    }
+    getExternalImage()
+
+    document.querySelector('button').onclick = function(){
+        getExternalImage()
+    }
+</script>

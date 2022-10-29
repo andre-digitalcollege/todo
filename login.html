@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assine e entre</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="icon/password.png">
+
+</head>
+
+<body>
+    <form id="signup-form">
+        <div class="mb-3">
+            <input id="name1" class="form-control" type="text" placeholder="Username" value="" required>
+        </div>
+        <div class="mb-3">
+            <input id="pass1" class="form-control" type="password" placeholder="Password" value="" required>
+        </div>
+        <div class="mb-3">
+            <input id="botaoadd" type="submit" value="">
+        </div>
+       
+    </form>
+    <form id="login-form">
+        <div class="mb-3">
+            <input id="name2" class="form-control" type="text" placeholder="Username" value="" required>
+        </div>
+        <div class="mb-3">
+            <input id="pass2" class="form-control" type="password" placeholder="Password" value="" required>
+        </div>
+        <div class="mb-3" id="botaoadd">
+            <button img src="icon/logout.png" value="" onclick="logar(); return false">
+        </div>
+        <div class="mb-3">
+            <img src="icon/logout.png">
+        </div>
+    </form>
+    <footer>
+        <p>Criptografia Descriptografada<sup>&reg;</sup></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
