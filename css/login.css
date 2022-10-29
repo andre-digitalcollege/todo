@@ -29,20 +29,20 @@ footer {
 }
 
 #botaoadd {
-    border: none;
     width: 55px;
     height: 55px;
     border-radius: 90px;
-    background-image: url("icon/add (1).png") no-repeat;
+    background-image: url("/Todo/icon/add (1).png");
+    background-color: black;
     position: relative;
-    right: -60px;
+    right: -61px;
     top: -5px;
     background-size: cover;
     object-fit: contain;
+   
 }
 
 #botaolog {
-    border: none;
     width: 55px;
     height: 55px;
     border-radius: 90px;
