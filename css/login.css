@@ -35,10 +35,25 @@ footer {
     background-image: url("/Todo/icon/add (1).png");
     background-color: black;
     position: relative;
-    right: -61px;
+    right: -60px;
     top: -5px;
     background-size: cover;
     object-fit: contain;
+    transition: 1s;
+   
+}
+#botaoadd:hover {
+    width: 56px;
+    height: 56px;
+    border-radius: 90px;
+    background-image: url("/Todo/icon/add (1).png");
+    background-color: black;
+    position: relative;
+    right: -60px;
+    top: -90px;
+    background-size: cover;
+    object-fit: contain;
+    transition: 10s;
    
 }
 
@@ -52,4 +67,17 @@ footer {
     top: -5px;
     background-size: cover; 
     object-fit: contain;
+    transition: 1s;
+}
+#botaolog:hover {
+    width: 55px;
+    height: 55px;
+    border-radius: 90px;
+    background-image: url("/Todo/icon/login (1).png");
+    position: relative;
+    right: -60px;
+    top: -90px;
+    background-size: cover; 
+    object-fit: contain;
+    transition: 10s;
 }
